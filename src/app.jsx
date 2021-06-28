@@ -3,13 +3,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
-<<<<<<< HEAD
 import AdminLogin from './pages/AdminLogin';
 import AdminPortal from './pages/AdminPortal';
-=======
 import Feedback from './pages/Feedback';
 import Renewal from './pages/Renewal';
->>>>>>> origin/master
 
 function App() {
 	return (
@@ -24,22 +21,20 @@ function App() {
 				<Route exact path='/home'>
 					<Home />
 				</Route>
-<<<<<<< HEAD
 				<Route exact path='/admin-login'>
 					<AdminLogin />
 				</Route>
 				<Route exact path='/admin-portal'>
 					<AdminPortal />
-=======
-				<Route path='/feedback'>
+				</Route>
+				<Route exact path='/feedback'>
 					<Feedback />
 				</Route>
-				<Route path='/renewal'>
+				<Route exact path='/renewal'>
 					<Renewal />
 				</Route>
-				<Route path='/'>
+				<Route exact path='/'>
 					<Home />
->>>>>>> origin/master
 				</Route>
 			</Switch>
 		</BrowserRouter>

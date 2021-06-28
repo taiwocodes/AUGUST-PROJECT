@@ -67,7 +67,7 @@ export default function AdminLogin() {
 							/>
 						</div>
 					</div>
-					<div class='action'>
+					<div className='action'>
 						<button type='submit'>
 							Login
 						</button>
