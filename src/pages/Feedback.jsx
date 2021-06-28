@@ -10,7 +10,7 @@ const Feedback = () => {
 				<form action=''>
 
     <h1>
-        Complaints? Suggestions?
+        COMPLAINTS? SUGGESTIONS?
     </h1>
 
     <h3>
@@ -38,7 +38,7 @@ const Feedback = () => {
 							/>
 						</div>
 						<div class='input-field'>
-							<input
+							<textarea
 								type='text'
 								placeholder='details of the complaint/suggestion'
 								name='details'
@@ -54,14 +54,15 @@ const Feedback = () => {
                             type='submit'
                             className='reg-btn'
                         >
-                            <a className='submit-btn' href= ''>submit</a>
+                            SUBMIT
                         </button>
                     </div>
 
                     <div>
                     <p>
-             or <a href="mailto:driverslicenseapp@gmail.com?subject=Complaint%20in%20working%20with%20you.">send us an email</a>
-              and we'll be right in touch.
+             or <a className='email-link' 
+			 href="mailto:driverslicenseapp@gmail.com?subject=Complaint%20/%20Suggestion.">
+				 send us an email</a> and we'll be right in touch.
             </p>
                     </div>
 
