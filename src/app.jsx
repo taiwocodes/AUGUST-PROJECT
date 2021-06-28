@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Register from './pages/Register';
-import Login from './pages/Login';
+import Registration from './pages/Registration';
 import Home from './pages/Home';
 import Feedback from './pages/Feedback';
 import Renewal from './pages/Renewal';
@@ -10,11 +9,8 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route path='/login'>
-					<Login />
-				</Route>
-				<Route path='/register'>
-					<Register />
+				<Route path='/registration'>
+					<Registration />
 				</Route>
 				<Route path='/home'>
 					<Home />
