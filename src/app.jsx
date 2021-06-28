@@ -3,22 +3,27 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
+import AdminLogin from './pages/AdminLogin';
+import AdminPortal from './pages/AdminPortal';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route path='/login'>
+				<Route exact path='/login'>
 					<Login />
 				</Route>
-				<Route path='/register'>
+				<Route exact path='/register'>
 					<Register />
 				</Route>
-				<Route path='/home'>
+				<Route exact path='/home'>
 					<Home />
 				</Route>
-				<Route path='/'>
-					<Register />
+				<Route exact path='/admin-login'>
+					<AdminLogin />
+				</Route>
+				<Route exact path='/admin-portal'>
+					<AdminPortal />
 				</Route>
 			</Switch>
 		</BrowserRouter>
