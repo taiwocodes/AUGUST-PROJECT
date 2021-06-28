@@ -11,18 +11,25 @@ body {
 }
 
 .form-action {
-	background: #fff;
+	background: rgb(1, 1, 56);
 	width: 500px;
+	height: fit-content;
 	margin: 65px auto;
 	display: flex;
 	flex-direction: column;
-	border-radius: 4px;
+	border-radius: 15px;
 	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+	color: White;
 }
 
 h1, h3, p {
 	padding: 35px 35px 0 35px;
-	font-weight: 300;
+	font-weight: 500;
+	font-size: 2.6em;
+	text-align: center;
+}
+.renew-title{
+	font-size: 1.5em;
 }
 
 .content {
@@ -32,6 +39,7 @@ h1, h3, p {
 
 .input-field {
 	padding: 12px 5px;
+
 }
 input {
 	font-size: 16px;
@@ -39,32 +47,37 @@ input {
 	font-family: 'Rubik', sans-serif;
 	width: 100%;
 	padding: 10px 1px;
+	background-color: inherit;
 	border: 0;
 	border-bottom: 1px solid #747474;
 	outline: none;
 	transition: all 0.2s;
+	color: white;
 }
 /* input::placeholder {
         text-transform: uppercase;
       } */
 
 input:focus {
-	border-color: #222;
+	border-color: rgb(248, 247, 247);
 }
 
 .action {
 	display: flex;
 	flex-direction: row;
 }
-button, .login-link, .reg-link, .submit-btn {
-	width: 100%;
+
+button, .login-link {
+	width: 30%;
+	margin: auto;
 	border: none;
+	margin-bottom: 5px;
 	padding: 18px;
 	font-family: 'Rubik', sans-serif;
 	cursor: pointer;
 	text-transform: uppercase;
 	background: #e8e9ec;
-	color: #777;
+	color: darkslateblue;
 	letter-spacing: 0.2px;
 	outline: 0;
 	transition: all 0.3s;
@@ -91,9 +104,6 @@ button:nth-child(2) {
 	border-bottom-right-radius: 4px;
 }
 
-button:hover {
-	background: #3c4d6d;
-}
 
 .links{
   padding-left: 60px;
@@ -102,7 +112,7 @@ button:hover {
 
 .redirect-link {
 	text-decoration: none;
-	color: #747474;
+	color: gray;
 	letter-spacing: 0.2px;
 	display: inline-block;
 	margin-bottom: 30px;

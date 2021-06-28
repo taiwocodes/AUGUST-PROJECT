@@ -27,27 +27,27 @@ const Login = (props) => {
 
 	return (
 		<>
-			<div class='form-action'>
+			<div className='form-action'>
 				<form action = ''>
 					<h1>Login</h1>
 					<div class='content'>
-						<div class='input-field'>
+						<div className='input-field'>
 							<input
 								type='email'
 								placeholder='enter your email'
 								name='email'
-								id='email'
+								className='email'
 								required
 								value={state.email}
 								onChange={handleChange}
 							/>
 						</div>
-						<div class='input-field'>
+						<div classname='input-field'>
 							<input
 								type='password'
 								placeholder='enter your password'
 								name='password'
-								id='password'
+								className='password'
 								required
 								value={state.password}
 								onChange={handleChange}
