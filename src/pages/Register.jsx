@@ -78,19 +78,13 @@ const Register = (props) => {
 	// 		});
 	// };
 
-
-
-
-
-
-    
 	history.push('/register');
 
 	return (
 		<>
 			<div class='form-action'>
-				<form action=''>
-					<h1>Register</h1>
+				<form className="form-body">
+					<h1>REGISTER</h1>
 					<div class='content'>
 						<div class='input-field'>
 							<input
@@ -126,16 +120,16 @@ const Register = (props) => {
 							/>
 						</div>
 					</div>
-					<div class='action'>
-						
+					<div className='action'>
 							<button
 								type='submit'
 								className='reg-btn'
 								onClick={handleSubmitClick}
 							>
-								<a className='reg-link'>register</a>
+								Register
 							</button>
 						</div>
+						
 						<div className='links'>
 							<a className='redirect-link' href='/login'>
 								Click here to continue
