@@ -133,9 +133,10 @@ const Register = (props) => {
 								className='reg-btn'
 								onClick={handleSubmitClick}
 							>
-								<a className='reg-link'>register</a>
+								register
 							</button>
 						</div>
+						
 						<div className='links'>
 							<a className='redirect-link' href='/login'>
 								Click here to continue

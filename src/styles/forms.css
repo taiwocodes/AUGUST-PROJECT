@@ -6,7 +6,7 @@
 }
 
 body {
-	background: gray;
+	background: lightgray;
 	font-family: 'Rubik', sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+h1, h3, p {
 	padding: 35px 35px 0 35px;
 	font-weight: 300;
 }
@@ -56,7 +56,7 @@ input:focus {
 	display: flex;
 	flex-direction: row;
 }
-button, .login-link, .reg-link {
+button, .login-link, .reg-link, .submit-btn {
 	width: 100%;
 	border: none;
 	padding: 18px;
