@@ -1,37 +1,18 @@
 import '../styles/index.css';
-
-
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import React from "react";
+
 
 function Home() {
   return (
-    <div className="home">
-      <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Home</h1>
-            <h1>Driving Experience Made Easier</h1>
-          </div>
-        </div>
-      </div>
+    <div>
+      <Navigation />
+      <img className="image" src="https://www.hippo.co.za/blog/motor/drivers-licence-renewal-guide/" />
+      <p>Driving Experience Made Easier</p>
+      <Footer />
     </div>
   );
 }
 
 export default Home;
-//import React from 'react';
-
-//const Home = () => {
-    //return(
-        //<div>this is the home page</div>
-   // )
-//}
-
-//export default Home;
