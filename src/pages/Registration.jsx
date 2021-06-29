@@ -1,117 +1,108 @@
-import React, { useState } from "react";
-import DayPicker from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
+import React from "react";
+import '../styles/forms.css'
 
 function Registration() {
-  const [value, onChange] = useState(new Date());
-  return (
-<>
+	// const [value, onChange] = useState(new Date());
 
-   <div className="form-action">
-    <form className="form-body" onSubmit="">
-      <h1>ENTER YOUR PERSONAL INFORMATION</h1>
+	return (
+		<>
 
-      <div className='content'>
+			<div className="form-action">
+				<form className="form-body" onSubmit="">
+					<h1 id="registration-title">ENTER YOUR PERSONAL INFORMATION</h1>
 
-      <div className='input-field'>
-          <input 
-          type='text'
-          name='First-name'
-          placeholder='First name'
-          required
-          />
-      </div>
+					<div className='content'>
 
-      <div className='input-field'>
-          <input 
-          type='text'
-          name='last-name'
-          placeholder='Last name'
-          required
-          />
-      </div>
+						<div className='input-field'>
+							<input
+								type='text'
+								name='First-name'
+								placeholder='First name'
+								required
+							/>
+						</div>
 
-      <div className='input-field'>
-          <input
-          type='text'
-          placeholder='Home address'
-          required
-          />
-      </div>
-
-      <div className='input-field'>
-          <input
-          type='text'
-          placeholder='Name of driving school attended'
-          required
-          />
-      </div>
-
-      <div className='input-field'>
-          <input
-          type='text'
-          placeholder='Address of driving school attended'
-          required
-          />
-      </div>
+						<div className='input-field'>
+							<input
+								type='text'
+								name='last-name'
+								placeholder='Last name'
+								required
+							/>
+						</div>
 
 
-      <div className='input-field'>
-          <input 
-          type='numbers'
-          name='id-number'
-          placeholder='Certificate ID number'
-          required
-          />
-      </div>
+						<div className='input-field'>
+							<input
+								type='text'
+								placeholder='Home address'
+								required
+							/>
+						</div>
 
-     <div className='input-field'>
-        <label>Name:
-          <input 
-          type='text'
-          placeholder='name'
-          required
-          /> 
-          </label>
-      </div>
+						<div className='input-field'>
+							<input
+								type='text'
+								placeholder='Name of driving school attended'
+								required
+							/>
+						</div>
+
+						<div className='input-field'>
+							<input
+								type='text'
+								placeholder='Address of driving school attended'
+								required
+							/>
+						</div>
 
 
+						<div className='input-field'>
+							<input
+								type='numbers'
+								name='id-number'
+								placeholder='Certificate ID number'
+								required
+							/>
+						</div>
 
 
-      <div>
-        <label>Gender:
-          <select>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-          </select>
-          </label>
-      </div>
+						<div className="gender">
+							<label className="labels">Gender: 
+								<select className="gender-options">
+									<option value="female">Female</option>
+									<option value="male">Male</option>
+								</select>
+							</label>
+						</div>
+						<br/>
+						<div className="gender">
+							<label className="labels">License Type: 
+								<select className="gender-options">
+									<option value="motorcycle">Motorcycle</option>
+									<option value="car">Car</option>
+									<option value="Bus">Bus</option>
+									<option value="Truck">Truck</option>
+								</select>
+							</label>
+						</div>
 
-       <div>
-        <label>Date:
-          <DayPicker
-           onChange={onChange}
-           value={value}
-          />
-          </label>
-      </div>
+					</div>
 
-      </div>
+					<div className='action'>
+						<button
+							type='submit'
+							className='reg-btn'
+						>
+							Register
+						</button>
+					</div>
 
-      <div className='action'>
-							<button
-								type='submit'
-								className='reg-btn'
-							>
-								Register
-							</button>
+				</form>
 			</div>
 
-  </form>
-   </div>
-
-   </>
-  );
+		</>
+	);
 }
 
 export default Registration;
