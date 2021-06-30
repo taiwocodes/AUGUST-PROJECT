@@ -29,6 +29,15 @@ function Registration() {
                 required
               />
             </div>
+    
+       <div className='input-field'>
+              <input
+                type='number'
+                name='phone-number'
+                placeholder='Phone number'
+                required
+              />
+            </div>
 
             <div className='input-field'>
               <input
