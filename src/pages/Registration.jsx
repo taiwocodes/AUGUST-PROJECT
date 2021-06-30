@@ -4,7 +4,6 @@ import { useHistory } from "react-router";
 
 function Registration() {
 
-
 	const [state, setState] = useState({
 		fname: '',
 		lname: '',
@@ -111,7 +110,7 @@ function Registration() {
 							<input
 								type='numbers'
 								name='id-number'
-								placeholder='Certificate ID number'
+								placeholder='Certificate ID'
 								value={state.cert}
 								onChange={handleChange}
 								required
