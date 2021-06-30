@@ -14,7 +14,7 @@ function Navigation() {
         </li>
 
         <li className="nav-item">
-          <Link to="/registration" className="nav-link">DL Application</Link>
+          <Link to="/registration" className="nav-link">Application</Link>
         </li>
 
         <li className="nav-item">
@@ -23,10 +23,6 @@ function Navigation() {
 
         <li className="nav-item">
           <Link to="/feedback" className="nav-link">Contact Us</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link to="/admin-login" className="nav-link">Admin Login</Link>
         </li>
 
         <li className="nav-item">

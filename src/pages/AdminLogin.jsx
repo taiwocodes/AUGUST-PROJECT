@@ -13,12 +13,18 @@ export default function AdminLogin() {
 
     //to update the values
 	const handleChange = (e) => {
+		// console.log(e.target, "e.target")
 		const { id, value } = e.target;
-		setState((prevState) => ({
-			...prevState,
-			[id]: value,
-		}));
-	};
+		console.log(id, 'id')
+		console.log(value, 'value')
+		setState((prevState) => {
+			console.log(prevState, 'prevState')
+			return {
+				...prevState,
+				[id]: value,
+			}
+		});
+	}
 
     const handleSubmit = (e) => {
         e.preventDefault();

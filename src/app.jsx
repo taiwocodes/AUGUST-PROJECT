@@ -10,7 +10,9 @@ import AdminLogin from './pages/AdminLogin';
 import AdminPortal from './pages/AdminPortal';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import FeedbackAccepted from './pages/FeedbackAccepted'
+import FeedbackAccepted from './pages/FeedbackAccepted';
+import RegAccepted from './pages/RegAccepted';
+
 
 
 function App() {
@@ -39,6 +41,9 @@ function App() {
 				</Route>
 				<Route exact path='/feedback-accepted'>
 					<FeedbackAccepted />
+				</Route>
+				<Route exact path='/reg-accepted'>
+					<RegAccepted />
 				</Route>
     	<Route exact path='/'>
 					<Home />

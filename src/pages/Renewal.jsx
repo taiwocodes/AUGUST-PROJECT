@@ -11,9 +11,9 @@ export default function Renewal() {
 
     return(
         <>
-            <div class='form-action'>
+            <div className='form-action'>
                 <form className="form-body" onSubmit={submitHandler}>
-                    <h1 className="renew-title">Enter your name and Driver's Licence Number</h1>
+                    <h1 className="renew-title">ENTER YOUR NAME AND OLD LICENSE NUMBER</h1>
                     <div className='content'>
                         <div className='input-field'>
                             <input

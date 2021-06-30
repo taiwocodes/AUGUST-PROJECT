@@ -13,6 +13,8 @@ const Registration = () => {
 		gender: ""
 	})
 
+
+
 	const [registrationData, updateRegistrationData] = React.useState(initialRegistrationData);
 
 	const handleChange = (e) => {
@@ -22,11 +24,15 @@ const Registration = () => {
 	};
 
 
-	
+    const history = useHistory();
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		console.log(registrationData)
 		//...submit to API or something
+
+        history.push('/reg-accepted');
+
 	}
 
 
@@ -122,7 +128,7 @@ const Registration = () => {
 					</div>
 
 					<div className='action'>
-						<button onClick={handleSubmit}
+						<button
 							type='submit'
 							className='reg-btn'
 						>

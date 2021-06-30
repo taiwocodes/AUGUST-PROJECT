@@ -30,7 +30,7 @@ const Feedback = () => {
         <div className='form-action'>
 			<form action='' onSubmit={handleSubmit}>
 
-			<h1>Contact Us</h1>
+			<h1>CONTACT US</h1>
     		<h3>Let us know how we can help you or do better.</h3>
 
 		<div className='content'>
