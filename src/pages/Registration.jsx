@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 function Registration() {
@@ -8,7 +8,7 @@ function Registration() {
 
       <div className="form-action">
         <form className="form-body" onSubmit="">
-          <h1>ENTER YOUR PERSONAL INFORMATION</h1>
+          <h1 id="registration-title">ENTER YOUR PERSONAL INFORMATION</h1>
 
           <div className='content'>
 
@@ -63,32 +63,14 @@ function Registration() {
                 required
               />
             </div>
+            <br/>
 
-            <div className='input-field'>
-              <label>Name:
-                <input
-                  type='text'
-                  placeholder='name'
-                  required
-                />
-              </label>
-            </div>
-
-
-
-
-            <div>
-              <label>Gender:
-                <select>
+            <div className="gender">
+              <label className="labels">Gender:
+                <select className="gender-options" >
                   <option value="female">Female</option>
                   <option value="male">Male</option>
                 </select>
-              </label>
-            </div>
-
-            <div>
-              <label>Date:
-
               </label>
             </div>
 
