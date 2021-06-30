@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../styles/navbar.css';
 
 function Navigation() {
   return (
@@ -21,6 +22,10 @@ function Navigation() {
 
         <li className="nav-item">
           <Link to="/feedback" className="nav-link">Feedback</Link>
+        </li>
+
+        <li className="nav-item">
+          <Link to="/admin-login" className="nav-link">Admin Login</Link>
         </li>
 
       </ul>
