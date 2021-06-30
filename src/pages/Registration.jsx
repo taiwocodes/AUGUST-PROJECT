@@ -2,34 +2,32 @@ import React, { useState } from "react";
 import { useHistory } from "react-router";
 
 
-function Registration() {
+const Registration = () => {
+	const initialRegistrationData = Object.freeze({
+		fname: "",
+		lname: "",
+		phonenum: "",
+		homeaddress: "",
+		driveschool: "",
+		idnum: "",
+		gender: ""
+	})
 
-	const [state, setState] = useState({
-		fname: '',
-		lname: '',
-		phone: '',
-		email: '',
-		address: '',
-		dsn: '',
-		cert: '',
-		gender: '',
-		date: new Date().getUTCDate()
-	});
-	const history = useHistory();
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-
-		history.push('/feedback-accepted');
-	}
+	const [registrationData, updateRegistrationData] = React.useState(initialRegistrationData);
 
 	const handleChange = (e) => {
-		const { id, value } = e.target;
-		setState((prevState) => ({
-			...prevState,
-			[id]: value,
-		}));
+		updateRegistrationData({...registrationData,
+			//trimming any whitespace
+			[e.target.name]: e.target.value.trim()});
 	};
+
+
+	
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		console.log(registrationData)
+		//...submit to API or something
+	}
 
 
 	return (
@@ -44,10 +42,8 @@ function Registration() {
 						<div className='input-field'>
 							<input
 								type='text'
-								name='First-name'
-								id="fname"
+								name="fname"
 								placeholder='First name'
-								// value={state.fname}
 								onChange={handleChange}
 								required
 							/>
@@ -56,9 +52,8 @@ function Registration() {
 						<div className='input-field'>
 							<input
 								type='text'
-								name='last-name'
+								name='lname'
 								placeholder='Last name'
-								value={state.lname}
 								onChange={handleChange}
 								required
 							/>
@@ -67,9 +62,8 @@ function Registration() {
 						<div className='input-field'>
 							<input
 								type='number'
-								name='phone-number'
+								name='phonenum'
 								placeholder='Phone Number'
-								value={state.phone}
 								onChange={handleChange}
 								required
 							/>
@@ -80,7 +74,6 @@ function Registration() {
 								type='email'
 								name='email'
 								placeholder='Email'
-								value={state.email}
 								onChange={handleChange}
 								required
 							/>
@@ -89,8 +82,8 @@ function Registration() {
 						<div className='input-field'>
 							<input
 								type='text'
+								name='homeaddress'
 								placeholder='Home address'
-								value={state.address}
 								onChange={handleChange}
 								required
 							/>
@@ -99,8 +92,8 @@ function Registration() {
 						<div className='input-field'>
 							<input
 								type='text'
+								name='driveschool'
 								placeholder='Name of driving school attended'
-								value={state.dsn}
 								onChange={handleChange}
 								required
 							/>
@@ -109,9 +102,8 @@ function Registration() {
 						<div className='input-field'>
 							<input
 								type='numbers'
-								name='id-number'
+								name='idnum'
 								placeholder='Certificate ID'
-								value={state.cert}
 								onChange={handleChange}
 								required
 							/>
@@ -120,7 +112,7 @@ function Registration() {
 
 						<div className="gender">
 							<label className="labels">Gender:
-								<select className="gender-options" onChange={handleChange} value={state.gender} >
+								<select  id='gender' className="gender-options" onChange={handleChange} >
 									<option value="female">Female</option>
 									<option value="male">Male</option>
 								</select>
@@ -130,7 +122,7 @@ function Registration() {
 					</div>
 
 					<div className='action'>
-						<button
+						<button onClick={handleSubmit}
 							type='submit'
 							className='reg-btn'
 						>
