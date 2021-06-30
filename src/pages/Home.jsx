@@ -9,12 +9,5 @@ function Home() {
       <p>Driving Experience Made Easier</p>
       <Footer />
     </div>
-        <>
-            <Navigation/>
-            <div className="background-image-container"></div>
-
-            <br/>
-            <Footer/>
-        </>
-
+   
 export default Home;
