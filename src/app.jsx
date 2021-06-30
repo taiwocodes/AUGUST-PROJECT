@@ -23,15 +23,16 @@ function App() {
 				<Route path='/renewal'>
 					<Renewal />
 				</Route>
-				<Route path='/'>
-					<Home />
-				</Route>
 				<Route exact path='/admin-login'>
 					<AdminLogin />
 				</Route>
 				<Route exact path='/admin-portal'>
 					<AdminPortal />
 				</Route>
+				<Route path='/'>
+					<Home />
+				</Route>
+				
 			</Switch>
 		</BrowserRouter>
 	);
