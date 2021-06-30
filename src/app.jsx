@@ -4,6 +4,8 @@ import Registration from './pages/Registration';
 import Home from './pages/Home';
 import Feedback from './pages/Feedback';
 import Renewal from './pages/Renewal';
+import AdminLogin from './pages/AdminLogin';
+import AdminPortal from './pages/AdminPortal';
 
 function App() {
 	return (
@@ -23,6 +25,12 @@ function App() {
 				</Route>
 				<Route path='/'>
 					<Home />
+				</Route>
+				<Route exact path='/admin-login'>
+					<AdminLogin />
+				</Route>
+				<Route exact path='/admin-portal'>
+					<AdminPortal />
 				</Route>
 			</Switch>
 		</BrowserRouter>

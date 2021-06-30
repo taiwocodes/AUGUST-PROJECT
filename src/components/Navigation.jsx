@@ -6,8 +6,6 @@ function Navigation() {
 
     <nav className="navbar">
 
-
-
       <ul className="nav-links">
         <li className="nav-item">
           <Link to="/" className="nav-link">Home</Link>

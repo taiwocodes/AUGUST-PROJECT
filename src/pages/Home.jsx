@@ -1,8 +1,5 @@
 import '../styles/index.css';
 import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import React from "react";
-
 
 function Home() {
   return (
@@ -12,7 +9,12 @@ function Home() {
       <p>Driving Experience Made Easier</p>
       <Footer />
     </div>
-  );
-}
+        <>
+            <Navigation/>
+            <div className="background-image-container"></div>
+
+            <br/>
+            <Footer/>
+        </>
 
 export default Home;

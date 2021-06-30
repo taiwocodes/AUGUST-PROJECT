@@ -46,14 +46,36 @@ p {
 	font-size: 1.5em;
 }
 
+#registration-title{
+	font-size: 1.3em;
+}
+
 .content {
 	padding: 35px;
 	text-align: center;
 }
 
 .input-field {
-	padding: 12px 5px;
+	padding: 10px 5px;
 }
+
+.gender{
+	text-align: start;
+}
+
+.labels{
+	margin-left: 5px;
+}
+
+.gender-options{
+	margin-left: 5px;
+	padding: 5px;
+}
+
+#date-label{
+	margin-left: 5px;
+}
+
 input {
 	font-size: 16px;
 	display: block;
