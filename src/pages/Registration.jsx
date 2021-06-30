@@ -21,6 +21,8 @@ const Registration = () => {
 			[e.target.name]: e.target.value.trim()});
 	};
 
+
+	
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		console.log(registrationData)
