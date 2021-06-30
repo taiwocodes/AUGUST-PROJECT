@@ -45,6 +45,7 @@ function Home() {
             </ul>
             
         </div>
+
     </div>
     <h1 id="motto"><em>...driving experience made easier</em></h1>
     </>
@@ -52,3 +53,5 @@ function Home() {
 }
    
 export default Home;
+
+

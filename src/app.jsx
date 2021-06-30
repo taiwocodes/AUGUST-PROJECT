@@ -10,22 +10,24 @@ import AdminLogin from './pages/AdminLogin';
 import AdminPortal from './pages/AdminPortal';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import FeedbackAccepted from './pages/FeedbackAccepted'
+
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Navigation/>
 			<Switch>
-				<Route path='/registration'>
+				<Route exact path='/registration'>
 					<Registration />
 				</Route>
-				<Route path='/home'>
+				<Route exact path='/home'>
 					<Home />
 				</Route>
-				<Route path='/feedback'>
+				<Route exact path='/feedback'>
 					<Feedback />
 				</Route>
-				<Route path='/renewal'>
+				<Route exact path='/renewal'>
 					<Renewal />
 				</Route>
 				<Route exact path='/admin-login'>
@@ -34,7 +36,10 @@ function App() {
 				<Route exact path='/admin-portal'>
 					<AdminPortal />
 				</Route>
-				<Route path='/'>
+				<Route exact path='/feedback-accepted'>
+					<FeedbackAccepted />
+				</Route>
+    	<Route exact path='/'>
 					<Home />
 				</Route>
 			</Switch>

@@ -28,10 +28,6 @@ function Navigation() {
           <Link to="/admin-login" className="nav-link">Admin Login</Link>
         </li>
 
-        <li className="nav-item">
-          <Link to="/admin-portal" className="nav-link">Admin Portal</Link>
-        </li>
-
       </ul>
     </div>
   );
