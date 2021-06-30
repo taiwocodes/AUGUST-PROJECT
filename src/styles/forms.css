@@ -1,17 +1,10 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-}
 
 body {
-	background: lightgray;
 	font-family: 'Rubik', sans-serif;
 }
 
 .form-action {
-	background: rgb(1, 1, 56);
+	background: #194C84;
 	width: 500px;
 	height: fit-content;
 	margin: 65px auto;
@@ -36,7 +29,7 @@ h3 {
 	text-align: center;
 }
 
-p {
+.feedback-p {
 	padding: 35px 35px 0 35px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -47,7 +40,8 @@ p {
 }
 
 #registration-title{
-	font-size: 1.3em;
+	font-size: 1.1em;
+	font-weight: 600;
 }
 
 .content {
@@ -125,7 +119,7 @@ button,
 	width: 30%;
 	margin: auto;
 	border: none;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	padding: 18px;
 	font-family: 'Rubik', sans-serif;
 	cursor: pointer;
@@ -137,14 +131,6 @@ button,
 	transition: all 0.3s;
 	text-decoration: none;
 }
-
-/* 
-.reg-btn {
-	/* margin: 10px 15px; */
-/* margin: 10px 15px; */
-/* margin-top: 10px;
-	margin-bottom: 50px;
-  margin-left: 30px; */
 
 button:hover {
 	background: #d8d8d8;
@@ -191,33 +177,3 @@ a:hover {
 }
 
 
-.navbar {
-	height: 80px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 2rem;
-	font-size: 1.2rem;
-}
-
-.nav-link {
-	text-decoration: none;
-	color: white;
-	transition: 0.3s all;
-}
-
-.nav-links {
-    display: grid;
-	grid-template-columns: repeat(4, auto);
-    grid-gap: 20px;
-	list-style: none;
-}
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	background-color: blue;
-}

@@ -1,20 +1,69 @@
 
 .background-image-container {
     width:100%;
-    height:20vh;
+    height:120px;
     background-image: url("https://nigeriadriverslicence.org/assets/images/4wheeler-banner.png");
     background-repeat: no-repeat;
     background-size:contain;
     background-position: bottom;
+    margin-bottom: 20px;
 
 }
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.content-wrapper{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.content-container {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 10px 100px;
+    width: 25%;
+    height: 45vh;
+    background-color: #194C84;
+    /* box-shadow: 1px 2px 3px 2px gray; */
+    border-radius: 20px;
+    color: white;
+}
 
-    
+.content-heading {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 5px;
+}
 
+#content-paragraph{
+    padding: 0;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.apply-btn-link{
+    text-decoration: none;
+    color: white;
+}
+
+.apply-btn-link:hover{
+    color: rgb(193, 207, 207);
+}
+
+#renew-link{
+    margin-top: 65px;
+}
+
+.app-requirements{
+    margin-left: 25px;
+}
+
+
+/* #apply-btn{
+    padding: 15px 0;
+    background-color: #01013F;
+} */
+
+
+#motto{
+    font-size: 30px;
+    font-weight: 600;
 }

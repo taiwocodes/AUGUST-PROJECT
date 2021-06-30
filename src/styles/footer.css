@@ -1,0 +1,19 @@
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #194C84;
+    color: white;
+    height: 8vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#footer-p{
+    padding: 0;
+    margin-bottom: 15px;
+	text-align: center;
+
+}

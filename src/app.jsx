@@ -1,3 +1,5 @@
+import './styles/index.css'
+
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Registration from './pages/Registration';
@@ -6,10 +8,13 @@ import Feedback from './pages/Feedback';
 import Renewal from './pages/Renewal';
 import AdminLogin from './pages/AdminLogin';
 import AdminPortal from './pages/AdminPortal';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
 	return (
 		<BrowserRouter>
+			<Navigation/>
 			<Switch>
 				<Route path='/registration'>
 					<Registration />
@@ -23,16 +28,17 @@ function App() {
 				<Route path='/renewal'>
 					<Renewal />
 				</Route>
-				<Route path='/'>
-					<Home />
-				</Route>
 				<Route exact path='/admin-login'>
 					<AdminLogin />
 				</Route>
 				<Route exact path='/admin-portal'>
 					<AdminPortal />
 				</Route>
+				<Route path='/'>
+					<Home />
+				</Route>
 			</Switch>
+			<Footer />
 		</BrowserRouter>
 	);
 }
