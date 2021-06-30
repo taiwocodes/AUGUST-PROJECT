@@ -9,5 +9,7 @@ function Home() {
       <p>Driving Experience Made Easier</p>
       <Footer />
     </div>
+    );
+}
    
 export default Home;
