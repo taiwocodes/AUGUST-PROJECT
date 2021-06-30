@@ -79,7 +79,7 @@ const Feedback = () => {
 			</div>
 
 			<div>
-				<p>or <a className='email-link' 
+				<p className="feedback-p">or <a className='email-link' 
 						href="mailto:driverslicenseapp@gmail.com?subject=Complaint%20/%20Suggestion.">
 				send us an email</a> and we'll be right in touch.
 				</p>

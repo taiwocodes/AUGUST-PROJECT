@@ -1,113 +1,140 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 
 
-function Registration() {
+const Registration = () => {
+	const initialRegistrationData = Object.freeze({
+		fname: "",
+		lname: "",
+		phonenum: "",
+		homeaddress: "",
+		driveschool: "",
+		idnum: "",
+		gender: ""
+	})
 
-  return (
-    <>
+	const [registrationData, updateRegistrationData] = React.useState(initialRegistrationData);
 
-      <div className="form-action">
-        <form className="form-body" onSubmit="">
-          <h1>ENTER YOUR PERSONAL INFORMATION</h1>
-
-          <div className='content'>
-
-            <div className='input-field'>
-              <input
-                type='text'
-                name='First-name'
-                placeholder='First name'
-                required
-              />
-            </div>
-
-            <div className='input-field'>
-              <input
-                type='text'
-                name='last-name'
-                placeholder='Last name'
-                required
-              />
-            </div>
-
-            <div className='input-field'>
-              <input
-                type='text'
-                placeholder='Home address'
-                required
-              />
-            </div>
-
-            <div className='input-field'>
-              <input
-                type='text'
-                placeholder='Name of driving school attended'
-                required
-              />
-            </div>
-
-            <div className='input-field'>
-              <input
-                type='text'
-                placeholder='Address of driving school attended'
-                required
-              />
-            </div>
+	const handleChange = (e) => {
+		updateRegistrationData({...registrationData,
+			//trimming any whitespace
+			[e.target.name]: e.target.value.trim()});
+	};
 
 
-            <div className='input-field'>
-              <input
-                type='numbers'
-                name='id-number'
-                placeholder='Certificate ID number'
-                required
-              />
-            </div>
-
-            <div className='input-field'>
-              <label>Name:
-                <input
-                  type='text'
-                  placeholder='name'
-                  required
-                />
-              </label>
-            </div>
+	
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		console.log(registrationData)
+		//...submit to API or something
+	}
 
 
+	return (
+		<>
 
+			<div className="form-action">
+				<form className="form-body" onSubmit={handleSubmit}>
+					<h1 id="registration-title">ENTER YOUR PERSONAL INFORMATION</h1>
 
-            <div>
-              <label>Gender:
-                <select>
-                  <option value="female">Female</option>
-                  <option value="male">Male</option>
-                </select>
-              </label>
-            </div>
+					<div className='content'>
 
-            <div>
-              <label>Date:
+						<div className='input-field'>
+							<input
+								type='text'
+								name="fname"
+								placeholder='First name'
+								onChange={handleChange}
+								required
+							/>
+						</div>
 
-              </label>
-            </div>
+						<div className='input-field'>
+							<input
+								type='text'
+								name='lname'
+								placeholder='Last name'
+								onChange={handleChange}
+								required
+							/>
+						</div>
 
-          </div>
+						<div className='input-field'>
+							<input
+								type='number'
+								name='phonenum'
+								placeholder='Phone Number'
+								onChange={handleChange}
+								required
+							/>
+						</div>
 
-          <div className='action'>
-            <button
-              type='submit'
-              className='reg-btn'
-            >
-              Register
-            </button>
-          </div>
+						<div className='input-field'>
+							<input
+								type='email'
+								name='email'
+								placeholder='Email'
+								onChange={handleChange}
+								required
+							/>
+						</div>
 
-        </form>
-      </div>
+						<div className='input-field'>
+							<input
+								type='text'
+								name='homeaddress'
+								placeholder='Home address'
+								onChange={handleChange}
+								required
+							/>
+						</div>
 
-    </>
-  );
+						<div className='input-field'>
+							<input
+								type='text'
+								name='driveschool'
+								placeholder='Name of driving school attended'
+								onChange={handleChange}
+								required
+							/>
+						</div>
+
+						<div className='input-field'>
+							<input
+								type='numbers'
+								name='idnum'
+								placeholder='Certificate ID'
+								onChange={handleChange}
+								required
+							/>
+						</div>
+						<br />
+
+						<div className="gender">
+							<label className="labels">Gender:
+								<select  id='gender' className="gender-options" onChange={handleChange} >
+									<option value="female">Female</option>
+									<option value="male">Male</option>
+								</select>
+							</label>
+						</div>
+
+					</div>
+
+					<div className='action'>
+						<button onClick={handleSubmit}
+							type='submit'
+							className='reg-btn'
+						>
+							Register
+						</button>
+					</div>
+
+				</form>
+			</div>
+
+		</>
+	);
 }
 
 export default Registration;
