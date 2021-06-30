@@ -24,6 +24,11 @@ function Navigation() {
         <li className="nav-item">
           <Link to="/feedback" className="nav-link">Feedback</Link>
         </li>
+    
+    
+        <li className="nav-item">
+          <Link to="/admin-login" className="nav-link">Admin Login</Link>
+        </li>
 
       </ul>
     </nav>
