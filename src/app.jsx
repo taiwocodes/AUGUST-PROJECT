@@ -12,6 +12,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import FeedbackAccepted from './pages/FeedbackAccepted';
 import RegAccepted from './pages/RegAccepted';
+import RenewalAccepted from './pages/RenewalAccepted';
 
 
 
@@ -44,6 +45,9 @@ function App() {
 				</Route>
 				<Route exact path='/reg-accepted'>
 					<RegAccepted />
+				</Route>
+				<Route exact path='/renewal-accepted'>
+					<RenewalAccepted />
 				</Route>
     	<Route exact path='/'>
 					<Home />

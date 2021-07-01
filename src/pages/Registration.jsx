@@ -15,7 +15,7 @@ const Registration = () => {
 
 
 
-	const [registrationData, updateRegistrationData] = React.useState(initialRegistrationData);
+	const [registrationData, updateRegistrationData] = useState(initialRegistrationData);
 
 	const handleChange = (e) => {
 		updateRegistrationData({...registrationData,
@@ -118,7 +118,7 @@ const Registration = () => {
 
 						<div className="gender">
 							<label className="labels">Gender:
-								<select  id='gender' className="gender-options" onChange={handleChange} >
+								<select  className="gender-options" onChange={handleChange} >
 									<option value="female">Female</option>
 									<option value="male">Male</option>
 								</select>
