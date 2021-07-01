@@ -36,7 +36,8 @@ h3 {
 }
 
 .renew-title {
-	font-size: 1.5em;
+	font-size: 1.1em;
+	font-weight: 600;
 }
 
 #registration-title{
@@ -57,17 +58,14 @@ h3 {
 	text-align: start;
 }
 
-.labels{
+#e-d-label{
+	justify-self: flex-start;
 	margin-left: 5px;
 }
 
 .gender-options{
 	margin-left: 5px;
 	padding: 5px;
-}
-
-#date-label{
-	margin-left: 5px;
 }
 
 input {
