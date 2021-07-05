@@ -1,0 +1,13 @@
+{
+  "Post": {
+    "fname": "string",
+    "lname": "string",
+    "phonenum": '',
+    "email": "string",
+    "homeaddress": "string",
+    "driveschool": "string",
+    "idnum": "int",
+    "gender": "string",
+    "regdate": "date"
+  }
+}
