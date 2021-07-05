@@ -2,7 +2,7 @@
   "Post": {
     "fname": "string",
     "lname": "string",
-    "phonenum": '',
+    "phonenum": "int",
     "email": "string",
     "homeaddress": "string",
     "driveschool": "string",
