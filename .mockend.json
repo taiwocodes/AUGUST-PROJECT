@@ -1,13 +1,77 @@
 {
-  "Post": {
-    "fname": "string",
-    "lname": "string",
-    "phonenum": "int",
-    "email": "string",
-    "homeaddress": "string",
-    "driveschool": "string",
-    "idnum": "int",
-    "gender": "string",
-    "regdate": "date"
-  }
+  "users" : [
+{
+	"fname": "John",
+    "lname": "Peters",
+    "phonenum": "0123456",
+    "email": "johnpeters@yahoo.com",
+    "homeaddress": "23, Palms Lane, Lagos",
+    "driveschool": "AA driving school",
+    "idnum": "1234",
+    "gender": "Male",
+    "regdate": "6/07/2021", 
+"id": "1"
+	},
+{
+	"fname": "Hanks",
+    "lname": "Hawkins",
+    "phonenum": "09876543",
+    "email": "hankskawkins@yahoo.com",
+    "homeaddress": "4, Pedro Lane, Ibadan",
+    "driveschool": "The Best driving school",
+    "idnum": "2567",
+    "gender": "Female",
+    "regdate": "6/07/2021",
+"id": "2"
+
+	},
+{
+	"fname": "Kevin",
+    "lname": "Combs",
+    "phonenum": "09567483",
+    "email": "kevincombs@yahoo.com",
+    "homeaddress": "4, Richmond Lane, Ibadan",
+    "driveschool": "Perfect Gear driving school",
+    "idnum": "3889",
+    "gender": "Female",
+    "regdate": "6/07/2021",
+"id": "3"
+
+	},
+{
+	"fname": "Shane",
+    "lname": "Dawson",
+    "phonenum": "09876543",
+    "email": "shanedawson@yahoo.com",
+    "homeaddress": "4, Okiki Lane, Lekki",
+    "driveschool": "Straight Hands driving school",
+    "idnum": "4765",
+    "gender": "Male",
+    "regdate": "6/07/2021",
+"id": "4"
+
+	}
+
+],
+
+"comments" : [
+{
+"name" : "Titi Ade",
+"email" : "titiade@yahoo.com",
+"details" : "Good app, keep it up.",
+"id" : "1"
+},
+{
+"name" : "Toyosi",
+"email" : "toyosi@yahoo.com",
+"details" : "Loved the experience!",
+"id" : "2"
+},
+{
+"name" : "Sola",
+"email" : "sola@yahoo.com",
+"details" : "I have registered, hope I get a feedback soon.",
+"id" : "3"
+}
+]
 }
